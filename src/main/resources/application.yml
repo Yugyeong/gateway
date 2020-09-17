@@ -12,7 +12,7 @@ spring:
           uri: http://localhost:8081
           predicates:
             - Path=/students/** 
-        - id: myClassManagement
+        - id: myclassmanagement
           uri: http://localhost:8082
           predicates:
             - Path=/myClasses/** 
@@ -47,8 +47,8 @@ spring:
           uri: http://myclassmanagement:8080
           predicates:
             - Path=/myClasses/** 
-        - id: mypage
-          uri: http://mypage:8080
+        - id: 04-mypage
+          uri: http://04-mypage:8080
           predicates:
             - Path= /mypages/**
       globalcors:
