@@ -39,16 +39,16 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: 04-student
-          uri: http://04-student:8080
+        - id: student
+          uri: http://student:8080
           predicates:
             - Path=/students/** 
-        - id: 04-myclassmanagement
-          uri: http://04-myclassmanagement:8080
+        - id: myclassmanagement
+          uri: http://myclassmanagement:8080
           predicates:
             - Path=/myClasses/** 
         - id: 04-mypage
-          uri: http://04-mypage:8080
+          uri: http://mypage:8080
           predicates:
             - Path= /mypages/**
       globalcors:
