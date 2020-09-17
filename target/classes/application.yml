@@ -43,8 +43,8 @@ spring:
           uri: http://student:8080
           predicates:
             - Path=/students/** 
-        - id: myclassmanagement
-          uri: http://myclassmanagement:8080
+        - id: myClassManagement
+          uri: http://myClassManagement:8080
           predicates:
             - Path=/myClasses/** 
         - id: mypage
